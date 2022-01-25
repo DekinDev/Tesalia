@@ -7293,10 +7293,11 @@ namespace Tesalia_Redes_App
 
         private void Version_Click(object sender, EventArgs e)
         {
+            var client = new WebClient();
+            string response = client.DownloadString("https://raw.githubusercontent.com/DualPlaysX/Tesalia/main/version?token=GHSAT0AAAAAABQ5LA6JI72QTBJYXW24XPQEYPP2DEA");
+
             WebClient mywebClient = new WebClient();
-            mywebClient.DownloadFile("https://www.googleapis.com/drive/v3/files/1kqjOgMhQaA93QC6vcgtGF2hYphFniwCp?supportsAllDrives=true&supportsTeamDrives=true&key=AIzaSyC3etOnvvUrusPVzE03ZFOQJrDxMkHWzRU&alt=media", Application.StartupPath + @"\version.txt");
-            WebClient mywebClient2 = new WebClient();
-            mywebClient2.DownloadFile("https://www.googleapis.com/drive/v3/files/1NfGbih9LFxA0gJfA5uA6XjD8X36YZHtx?supportsAllDrives=true&supportsTeamDrives=true&key=AIzaSyC3etOnvvUrusPVzE03ZFOQJrDxMkHWzRU&alt=media", Application.StartupPath + @"\Updater.new");
+            mywebClient.DownloadFile("https://www.googleapis.com/drive/v3/files/1NfGbih9LFxA0gJfA5uA6XjD8X36YZHtx?supportsAllDrives=true&supportsTeamDrives=true&key=AIzaSyC3etOnvvUrusPVzE03ZFOQJrDxMkHWzRU&alt=media", Application.StartupPath + @"\Updater.new");
 
             if (File.Exists(Application.StartupPath + @"\Updater.new"))
             {
@@ -7307,16 +7308,7 @@ namespace Tesalia_Redes_App
                 }
             }
 
-            StreamReader sr = new StreamReader(Application.StartupPath + @"\version.txt");
-            string line = sr.ReadLine();
-            sr.Close();
-
-            if (File.Exists(Application.StartupPath + @"\version.txt"))
-            {
-                File.Delete(Application.StartupPath + @"\version.txt");
-            }
-
-            if (line != Application.ProductVersion.ToString())
+            if (response != Application.ProductVersion.ToString())
             {
                 MessageBox.Show("Hay una nueva actualización del programa.", "Tesalia Redes", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 MessageBox.Show("Se descargará y actualizará a continuación.", "Tesalia Redes", MessageBoxButtons.OK, MessageBoxIcon.Information);
