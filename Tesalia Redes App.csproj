@@ -173,12 +173,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\qweqweew.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\asaasasas.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="DotNetZip.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
