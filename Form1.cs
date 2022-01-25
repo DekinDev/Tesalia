@@ -7297,7 +7297,7 @@ namespace Tesalia_Redes_App
             string response = client.DownloadString("https://raw.githubusercontent.com/DualPlaysX/Tesalia/main/version?token=GHSAT0AAAAAABQ5LA6JI72QTBJYXW24XPQEYPP2DEA");
 
             WebClient mywebClient = new WebClient();
-            mywebClient.DownloadFile("https://www.googleapis.com/drive/v3/files/1NfGbih9LFxA0gJfA5uA6XjD8X36YZHtx?supportsAllDrives=true&supportsTeamDrives=true&key=AIzaSyC3etOnvvUrusPVzE03ZFOQJrDxMkHWzRU&alt=media", Application.StartupPath + @"\Updater.new");
+            mywebClient.DownloadFile("https://github.com/DualPlaysX/Tesalia/raw/main/Updater.exe", Application.StartupPath + @"\Updater.new");
 
             if (File.Exists(Application.StartupPath + @"\Updater.new"))
             {

@@ -1,0 +1,19 @@
+C:\Users\helpdesk10\source\repos\Tesalia\bin\Release\DotNetZip.dll
+C:\Users\helpdesk10\source\repos\Tesalia\bin\Release\Updater.exe
+C:\Users\helpdesk10\source\repos\Tesalia\bin\Release\Plantilla.data
+C:\Users\helpdesk10\source\repos\Tesalia\bin\Release\Tesalia Redes App.exe.config
+C:\Users\helpdesk10\source\repos\Tesalia\bin\Release\Tesalia Redes App.exe
+C:\Users\helpdesk10\source\repos\Tesalia\bin\Release\Tesalia Redes App.pdb
+C:\Users\helpdesk10\source\repos\Tesalia\bin\Release\FontAwesome.Sharp.dll
+C:\Users\helpdesk10\source\repos\Tesalia\obj\Release\Tesalia Redes App.csproj.AssemblyReference.cache
+C:\Users\helpdesk10\source\repos\Tesalia\obj\Release\Tesalia Redes App.csproj.SuggestedBindingRedirects.cache
+C:\Users\helpdesk10\source\repos\Tesalia\obj\Release\Tesalia_Redes_App.Form1.resources
+C:\Users\helpdesk10\source\repos\Tesalia\obj\Release\Tesalia_Redes_App.Form2.resources
+C:\Users\helpdesk10\source\repos\Tesalia\obj\Release\Tesalia_Redes_App.Form3.resources
+C:\Users\helpdesk10\source\repos\Tesalia\obj\Release\Tesalia_Redes_App.Form4.resources
+C:\Users\helpdesk10\source\repos\Tesalia\obj\Release\Tesalia_Redes_App.Properties.Resources.resources
+C:\Users\helpdesk10\source\repos\Tesalia\obj\Release\Tesalia Redes App.csproj.GenerateResource.cache
+C:\Users\helpdesk10\source\repos\Tesalia\obj\Release\Tesalia Redes App.csproj.CoreCompileInputs.cache
+C:\Users\helpdesk10\source\repos\Tesalia\obj\Release\Tesalia Redes App.csproj.CopyComplete
+C:\Users\helpdesk10\source\repos\Tesalia\obj\Release\Tesalia Redes App.exe
+C:\Users\helpdesk10\source\repos\Tesalia\obj\Release\Tesalia Redes App.pdb

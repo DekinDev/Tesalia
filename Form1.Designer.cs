@@ -6912,12 +6912,13 @@
             // Version
             // 
             this.Version.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Version.AutoSize = true;
             this.Version.Font = new System.Drawing.Font("Bahnschrift", 11F, System.Drawing.FontStyle.Bold);
             this.Version.ForeColor = System.Drawing.Color.White;
-            this.Version.Location = new System.Drawing.Point(5, 563);
+            this.Version.Location = new System.Drawing.Point(5, 566);
             this.Version.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Version.Name = "Version";
-            this.Version.Size = new System.Drawing.Size(210, 25);
+            this.Version.Size = new System.Drawing.Size(58, 18);
             this.Version.TabIndex = 169;
             this.Version.Text = "Version";
             this.Version.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
