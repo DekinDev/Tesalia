@@ -61,6 +61,7 @@ namespace Tesalia_Redes_App
         readonly OpenFileDialog openFileDialog1 = new OpenFileDialog();
         string RutaFirmaS = "";
         string FileSend = "0";
+        int stop = 0;
         #endregion
 
         #region VENTANA
@@ -5490,172 +5491,160 @@ namespace Tesalia_Redes_App
         }
         private void AutoJornada_Click(object sender, EventArgs e)
         {
-            if (Auto1.Text != "")
-            {
-                if (Auto2.Text != "")
-                {
-                    if (Auto3.Text != "")
-                    {
-                        if (Auto4.Text != "")
-                        {
-                            EM1.Text = Auto1.Text;
-                            SM1.Text = Auto2.Text;
-                            ET1.Text = Auto3.Text;
-                            ST1.Text = Auto4.Text;
+            EM1.Text = Auto1.Text;
+            SM1.Text = Auto2.Text;
+            ET1.Text = Auto3.Text;
+            ST1.Text = Auto4.Text;
 
-                            EM2.Text = Auto1.Text;
-                            SM2.Text = Auto2.Text;
-                            ET2.Text = Auto3.Text;
-                            ST2.Text = Auto4.Text;
+            EM2.Text = Auto1.Text;
+            SM2.Text = Auto2.Text;
+            ET2.Text = Auto3.Text;
+            ST2.Text = Auto4.Text;
 
-                            EM3.Text = Auto1.Text;
-                            SM3.Text = Auto2.Text;
-                            ET3.Text = Auto3.Text;
-                            ST3.Text = Auto4.Text;
+            EM3.Text = Auto1.Text;
+            SM3.Text = Auto2.Text;
+            ET3.Text = Auto3.Text;
+            ST3.Text = Auto4.Text;
 
-                            EM4.Text = Auto1.Text;
-                            SM4.Text = Auto2.Text;
-                            ET4.Text = Auto3.Text;
-                            ST4.Text = Auto4.Text;
+            EM4.Text = Auto1.Text;
+            SM4.Text = Auto2.Text;
+            ET4.Text = Auto3.Text;
+            ST4.Text = Auto4.Text;
 
-                            EM5.Text = Auto1.Text;
-                            SM5.Text = Auto2.Text;
-                            ET5.Text = Auto3.Text;
-                            ST5.Text = Auto4.Text;
+            EM5.Text = Auto1.Text;
+            SM5.Text = Auto2.Text;
+            ET5.Text = Auto3.Text;
+            ST5.Text = Auto4.Text;
 
-                            EM6.Text = Auto1.Text;
-                            SM6.Text = Auto2.Text;
-                            ET6.Text = Auto3.Text;
-                            ST6.Text = Auto4.Text;
+            EM6.Text = Auto1.Text;
+            SM6.Text = Auto2.Text;
+            ET6.Text = Auto3.Text;
+            ST6.Text = Auto4.Text;
 
-                            EM7.Text = Auto1.Text;
-                            SM7.Text = Auto2.Text;
-                            ET7.Text = Auto3.Text;
-                            ST7.Text = Auto4.Text;
+            EM7.Text = Auto1.Text;
+            SM7.Text = Auto2.Text;
+            ET7.Text = Auto3.Text;
+            ST7.Text = Auto4.Text;
 
-                            EM8.Text = Auto1.Text;
-                            SM8.Text = Auto2.Text;
-                            ET8.Text = Auto3.Text;
-                            ST8.Text = Auto4.Text;
+            EM8.Text = Auto1.Text;
+            SM8.Text = Auto2.Text;
+            ET8.Text = Auto3.Text;
+            ST8.Text = Auto4.Text;
 
-                            EM9.Text = Auto1.Text;
-                            SM9.Text = Auto2.Text;
-                            ET9.Text = Auto3.Text;
-                            ST9.Text = Auto4.Text;
+            EM9.Text = Auto1.Text;
+            SM9.Text = Auto2.Text;
+            ET9.Text = Auto3.Text;
+            ST9.Text = Auto4.Text;
 
-                            EM10.Text = Auto1.Text;
-                            SM10.Text = Auto2.Text;
-                            ET10.Text = Auto3.Text;
-                            ST10.Text = Auto4.Text;
+            EM10.Text = Auto1.Text;
+            SM10.Text = Auto2.Text;
+            ET10.Text = Auto3.Text;
+            ST10.Text = Auto4.Text;
 
-                            EM11.Text = Auto1.Text;
-                            SM11.Text = Auto2.Text;
-                            ET11.Text = Auto3.Text;
-                            ST11.Text = Auto4.Text;
+            EM11.Text = Auto1.Text;
+            SM11.Text = Auto2.Text;
+            ET11.Text = Auto3.Text;
+            ST11.Text = Auto4.Text;
 
-                            EM12.Text = Auto1.Text;
-                            SM12.Text = Auto2.Text;
-                            ET12.Text = Auto3.Text;
-                            ST12.Text = Auto4.Text;
+            EM12.Text = Auto1.Text;
+            SM12.Text = Auto2.Text;
+            ET12.Text = Auto3.Text;
+            ST12.Text = Auto4.Text;
 
-                            EM13.Text = Auto1.Text;
-                            SM13.Text = Auto2.Text;
-                            ET13.Text = Auto3.Text;
-                            ST13.Text = Auto4.Text;
+            EM13.Text = Auto1.Text;
+            SM13.Text = Auto2.Text;
+            ET13.Text = Auto3.Text;
+            ST13.Text = Auto4.Text;
 
-                            EM14.Text = Auto1.Text;
-                            SM14.Text = Auto2.Text;
-                            ET14.Text = Auto3.Text;
-                            ST14.Text = Auto4.Text;
+            EM14.Text = Auto1.Text;
+            SM14.Text = Auto2.Text;
+            ET14.Text = Auto3.Text;
+            ST14.Text = Auto4.Text;
 
-                            EM15.Text = Auto1.Text;
-                            SM15.Text = Auto2.Text;
-                            ET15.Text = Auto3.Text;
-                            ST15.Text = Auto4.Text;
+            EM15.Text = Auto1.Text;
+            SM15.Text = Auto2.Text;
+            ET15.Text = Auto3.Text;
+            ST15.Text = Auto4.Text;
 
-                            EM16.Text = Auto1.Text;
-                            SM16.Text = Auto2.Text;
-                            ET16.Text = Auto3.Text;
-                            ST16.Text = Auto4.Text;
+            EM16.Text = Auto1.Text;
+            SM16.Text = Auto2.Text;
+            ET16.Text = Auto3.Text;
+            ST16.Text = Auto4.Text;
 
-                            EM17.Text = Auto1.Text;
-                            SM17.Text = Auto2.Text;
-                            ET17.Text = Auto3.Text;
-                            ST17.Text = Auto4.Text;
+            EM17.Text = Auto1.Text;
+            SM17.Text = Auto2.Text;
+            ET17.Text = Auto3.Text;
+            ST17.Text = Auto4.Text;
 
-                            EM18.Text = Auto1.Text;
-                            SM18.Text = Auto2.Text;
-                            ET18.Text = Auto3.Text;
-                            ST18.Text = Auto4.Text;
+            EM18.Text = Auto1.Text;
+            SM18.Text = Auto2.Text;
+            ET18.Text = Auto3.Text;
+            ST18.Text = Auto4.Text;
 
-                            EM19.Text = Auto1.Text;
-                            SM19.Text = Auto2.Text;
-                            ET19.Text = Auto3.Text;
-                            ST19.Text = Auto4.Text;
+            EM19.Text = Auto1.Text;
+            SM19.Text = Auto2.Text;
+            ET19.Text = Auto3.Text;
+            ST19.Text = Auto4.Text;
 
-                            EM20.Text = Auto1.Text;
-                            SM20.Text = Auto2.Text;
-                            ET20.Text = Auto3.Text;
-                            ST20.Text = Auto4.Text;
+            EM20.Text = Auto1.Text;
+            SM20.Text = Auto2.Text;
+            ET20.Text = Auto3.Text;
+            ST20.Text = Auto4.Text;
 
-                            EM21.Text = Auto1.Text;
-                            SM21.Text = Auto2.Text;
-                            ET21.Text = Auto3.Text;
-                            ST21.Text = Auto4.Text;
+            EM21.Text = Auto1.Text;
+            SM21.Text = Auto2.Text;
+            ET21.Text = Auto3.Text;
+            ST21.Text = Auto4.Text;
 
-                            EM22.Text = Auto1.Text;
-                            SM22.Text = Auto2.Text;
-                            ET22.Text = Auto3.Text;
-                            ST22.Text = Auto4.Text;
+            EM22.Text = Auto1.Text;
+            SM22.Text = Auto2.Text;
+            ET22.Text = Auto3.Text;
+            ST22.Text = Auto4.Text;
 
-                            EM23.Text = Auto1.Text;
-                            SM23.Text = Auto2.Text;
-                            ET23.Text = Auto3.Text;
-                            ST23.Text = Auto4.Text;
+            EM23.Text = Auto1.Text;
+            SM23.Text = Auto2.Text;
+            ET23.Text = Auto3.Text;
+            ST23.Text = Auto4.Text;
 
-                            EM24.Text = Auto1.Text;
-                            SM24.Text = Auto2.Text;
-                            ET24.Text = Auto3.Text;
-                            ST24.Text = Auto4.Text;
+            EM24.Text = Auto1.Text;
+            SM24.Text = Auto2.Text;
+            ET24.Text = Auto3.Text;
+            ST24.Text = Auto4.Text;
 
-                            EM25.Text = Auto1.Text;
-                            SM25.Text = Auto2.Text;
-                            ET25.Text = Auto3.Text;
-                            ST25.Text = Auto4.Text;
+            EM25.Text = Auto1.Text;
+            SM25.Text = Auto2.Text;
+            ET25.Text = Auto3.Text;
+            ST25.Text = Auto4.Text;
 
-                            EM26.Text = Auto1.Text;
-                            SM26.Text = Auto2.Text;
-                            ET26.Text = Auto3.Text;
-                            ST26.Text = Auto4.Text;
+            EM26.Text = Auto1.Text;
+            SM26.Text = Auto2.Text;
+            ET26.Text = Auto3.Text;
+            ST26.Text = Auto4.Text;
 
-                            EM27.Text = Auto1.Text;
-                            SM27.Text = Auto2.Text;
-                            ET27.Text = Auto3.Text;
-                            ST27.Text = Auto4.Text;
+            EM27.Text = Auto1.Text;
+            SM27.Text = Auto2.Text;
+            ET27.Text = Auto3.Text;
+            ST27.Text = Auto4.Text;
 
-                            EM28.Text = Auto1.Text;
-                            SM28.Text = Auto2.Text;
-                            ET28.Text = Auto3.Text;
-                            ST28.Text = Auto4.Text;
+            EM28.Text = Auto1.Text;
+            SM28.Text = Auto2.Text;
+            ET28.Text = Auto3.Text;
+            ST28.Text = Auto4.Text;
 
-                            EM29.Text = Auto1.Text;
-                            SM29.Text = Auto2.Text;
-                            ET29.Text = Auto3.Text;
-                            ST29.Text = Auto4.Text;
+            EM29.Text = Auto1.Text;
+            SM29.Text = Auto2.Text;
+            ET29.Text = Auto3.Text;
+            ST29.Text = Auto4.Text;
 
-                            EM30.Text = Auto1.Text;
-                            SM30.Text = Auto2.Text;
-                            ET30.Text = Auto3.Text;
-                            ST30.Text = Auto4.Text;
+            EM30.Text = Auto1.Text;
+            SM30.Text = Auto2.Text;
+            ET30.Text = Auto3.Text;
+            ST30.Text = Auto4.Text;
 
-                            EM31.Text = Auto1.Text;
-                            SM31.Text = Auto2.Text;
-                            ET31.Text = Auto3.Text;
-                            ST31.Text = Auto4.Text;
-                        }
-                    }
-                }
-            }
+            EM31.Text = Auto1.Text;
+            SM31.Text = Auto2.Text;
+            ET31.Text = Auto3.Text;
+            ST31.Text = Auto4.Text;
 
             Festivos();
         }
@@ -5820,85 +5809,8 @@ namespace Tesalia_Redes_App
         private void STCheck2_2_Click(object sender, EventArgs e)
         {
             ActivarPass.Checked = false;
-        }
-        #endregion
 
-        #region GESTION DE JORNADAS
-        private void AbrirJornada_Click(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(JornadaFiles.Text) == false)
-            {
-                Process.Start(System.Windows.Forms.Application.StartupPath + @"\Jornadas\" + JornadaFiles.Text);
-            }
         }
-        private void EnviarJornada_Click(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(JornadaFiles.Text) == false)
-            {
-                if (Properties.Settings.Default.Name != "")
-                {
-                    if (Properties.Settings.Default.Documento != "")
-                    {
-                        if (Properties.Settings.Default.SeguridadS != "")
-                        {
-                            if (Properties.Settings.Default.HorasdeJornada != "")
-                            {
-                                if (Properties.Settings.Default.RutaFirma != "")
-                                {
-                                    Properties.Settings.Default.UltimoArchivoGenerado = System.Windows.Forms.Application.StartupPath + @"\Jornadas\" + JornadaFiles.Text;
-
-                                    Form3 fm3 = new Form3("Registro de Jornada de " + MesPreSelected, "Registro de la Jornada de: " + Properties.Settings.Default.Name + " de " + MesPreSelected);
-                                    fm3.Show();
-                                }
-                                else
-                                {
-                                    MessageBox.Show("No hay ninguna firma cargada.", "Tesalia Redes", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                }
-                            }
-                            else
-                            {
-                                MessageBox.Show("Es necesario indicar las horas de la jornada.", "Tesalia Redes", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            }
-                        }
-                        else
-                        {
-                            MessageBox.Show("No se ha introducido documento de seguridad en la información del trabajador.", "Tesalia Redes", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
-                    }
-                    else
-                    {
-                        MessageBox.Show("No se ha introducido el DNI en la información del trabajador.", "Tesalia Redes", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("No se ha introducido el nombre completo en la información del trabajador.", "Tesalia Redes", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-        }
-        private void EliminarJornada_Click(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(JornadaFiles.Text) == false)
-            {
-                try
-                {
-                    File.Delete(System.Windows.Forms.Application.StartupPath + @"\Jornadas\" + JornadaFiles.Text);
-                    JornadaFiles.Items.Clear();
-                    DirectoryInfo di = new DirectoryInfo(System.Windows.Forms.Application.StartupPath + @"\Jornadas\");
-                    FileInfo[] files = di.GetFiles("*.xlsx");
-                    foreach (var file in files)
-                    {
-                        JornadaFiles.Items.Add(file);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message, "Tesalia Redes", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-        }
-        #endregion
-
         private void SendHExtra_Click(object sender, EventArgs e)
         {
             if (Properties.Settings.Default.Name != "")
@@ -7258,8 +7170,6 @@ namespace Tesalia_Redes_App
                 MessageBox.Show("No se ha introducido el nombre completo en la información del trabajador.", "Tesalia Redes", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        int stop = 0;
         private void timer3_Tick(object sender, EventArgs e)
         {
             if (stop == 0)
@@ -7267,34 +7177,40 @@ namespace Tesalia_Redes_App
                 stop = 1;
                 DateTime now = DateTime.Now;
                 string nox = now.ToString("dd");
-                if (nox == "22")
-                {
-                    MessageBox.Show("Somos día " + nox + ". \rRecuerda envíar tus horas extras antes de cobrar para que se te paguen este mes.", "Tesalia Redes", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else if (nox == "23")
-                {
-                    MessageBox.Show("Somos día " + nox + ". \rRecuerda envíar tus horas extras antes de cobrar para que se te paguen este mes.", "Tesalia Redes", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else if (nox == "24")
-                {
-                    MessageBox.Show("Somos día " + nox + ". \rRecuerda envíar tus horas extras antes de cobrar para que se te paguen este mes.", "Tesalia Redes", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else if (nox == "25")
-                {
-                    MessageBox.Show("Somos día " + nox + ". \rRecuerda envíar tus horas extras antes de cobrar para que se te paguen este mes.", "Tesalia Redes", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else if (nox == "26")
-                {
-                    MessageBox.Show("Somos día " + nox + ". \rRecuerda envíar tus horas extras antes de cobrar para que se te paguen este mes.", "Tesalia Redes", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                timer3.Stop();
-            }
-        }
 
+                if (Properties.Settings.Default.DiaActual != nox)
+                {
+                    Properties.Settings.Default.DiaActual = nox;
+                    Properties.Settings.Default.Save();
+
+                    if (nox == "22")
+                    {
+                        MessageBox.Show("Somos día " + nox + ". \rRecuerda envíar tus horas extras antes de cobrar para que se te paguen este mes.", "Tesalia Redes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else if (nox == "23")
+                    {
+                        MessageBox.Show("Somos día " + nox + ". \rRecuerda envíar tus horas extras antes de cobrar para que se te paguen este mes.", "Tesalia Redes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else if (nox == "24")
+                    {
+                        MessageBox.Show("Somos día " + nox + ". \rRecuerda envíar tus horas extras antes de cobrar para que se te paguen este mes.", "Tesalia Redes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else if (nox == "25")
+                    {
+                        MessageBox.Show("Somos día " + nox + ". \rRecuerda envíar tus horas extras antes de cobrar para que se te paguen este mes.", "Tesalia Redes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else if (nox == "26")
+                    {
+                        MessageBox.Show("Somos día " + nox + ". \rRecuerda envíar tus horas extras antes de cobrar para que se te paguen este mes.", "Tesalia Redes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+            timer3.Stop();
+        }
         private void Version_Click(object sender, EventArgs e)
         {
             var client = new WebClient();
-            string response = client.DownloadString("https://raw.githubusercontent.com/DualPlaysX/Tesalia/main/version?token=GHSAT0AAAAAABQ5LA6JI72QTBJYXW24XPQEYPP2DEA");
+            string response = client.DownloadString("https://raw.githubusercontent.com/DualPlaysX/Tesalia/main/version?token=GHSAT0AAAAAABQ5LA6JI72QTBJYXW24XPQEYPP2DEA").Replace("\n", "");
 
             WebClient mywebClient = new WebClient();
             mywebClient.DownloadFile("https://github.com/DualPlaysX/Tesalia/raw/main/Updater.exe", Application.StartupPath + @"\Updater.new");
@@ -7310,11 +7226,91 @@ namespace Tesalia_Redes_App
 
             if (response != Application.ProductVersion.ToString())
             {
-                MessageBox.Show("Hay una nueva actualización del programa.", "Tesalia Redes", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                MessageBox.Show("Se descargará y actualizará a continuación.", "Tesalia Redes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Hay una nueva actualización del programa.\rSe descargará y actualizará a continuación.", "Tesalia Redes", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Process.Start(Application.StartupPath + @"\Updater.exe");
                 Close();
             }
+            else
+            {
+                MessageBox.Show("Tienes la ultima versión.", "Tesalia Redes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
+        #endregion
+
+        #region GESTION DE JORNADAS
+        private void AbrirJornada_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(JornadaFiles.Text) == false)
+            {
+                Process.Start(System.Windows.Forms.Application.StartupPath + @"\Jornadas\" + JornadaFiles.Text);
+            }
+        }
+        private void EnviarJornada_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(JornadaFiles.Text) == false)
+            {
+                if (Properties.Settings.Default.Name != "")
+                {
+                    if (Properties.Settings.Default.Documento != "")
+                    {
+                        if (Properties.Settings.Default.SeguridadS != "")
+                        {
+                            if (Properties.Settings.Default.HorasdeJornada != "")
+                            {
+                                if (Properties.Settings.Default.RutaFirma != "")
+                                {
+                                    Properties.Settings.Default.UltimoArchivoGenerado = System.Windows.Forms.Application.StartupPath + @"\Jornadas\" + JornadaFiles.Text;
+
+                                    Form3 fm3 = new Form3("Registro de Jornada de " + MesPreSelected, "Registro de la Jornada de: " + Properties.Settings.Default.Name + " de " + MesPreSelected);
+                                    fm3.Show();
+                                }
+                                else
+                                {
+                                    MessageBox.Show("No hay ninguna firma cargada.", "Tesalia Redes", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Es necesario indicar las horas de la jornada.", "Tesalia Redes", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("No se ha introducido documento de seguridad en la información del trabajador.", "Tesalia Redes", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se ha introducido el DNI en la información del trabajador.", "Tesalia Redes", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("No se ha introducido el nombre completo en la información del trabajador.", "Tesalia Redes", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+        private void EliminarJornada_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(JornadaFiles.Text) == false)
+            {
+                try
+                {
+                    File.Delete(System.Windows.Forms.Application.StartupPath + @"\Jornadas\" + JornadaFiles.Text);
+                    JornadaFiles.Items.Clear();
+                    DirectoryInfo di = new DirectoryInfo(System.Windows.Forms.Application.StartupPath + @"\Jornadas\");
+                    FileInfo[] files = di.GetFiles("*.xlsx");
+                    foreach (var file in files)
+                    {
+                        JornadaFiles.Items.Add(file);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Tesalia Redes", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+        #endregion
     }
 }

@@ -1798,5 +1798,17 @@ namespace Tesalia_Redes_App.Properties {
                 this["CorreoType"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string DiaActual {
+            get {
+                return ((string)(this["DiaActual"]));
+            }
+            set {
+                this["DiaActual"] = value;
+            }
+        }
     }
 }

@@ -6913,6 +6913,7 @@
             // 
             this.Version.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.Version.AutoSize = true;
+            this.Version.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Version.Font = new System.Drawing.Font("Bahnschrift", 11F, System.Drawing.FontStyle.Bold);
             this.Version.ForeColor = System.Drawing.Color.White;
             this.Version.Location = new System.Drawing.Point(5, 566);
