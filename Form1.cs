@@ -54,6 +54,7 @@ namespace Tesalia_Redes_App
         }
 
         #region DECLARACIONES GENERALES
+        Microsoft.Office.Interop.Excel.Application Excel = new Microsoft.Office.Interop.Excel.Application();
         int FormLoaded = 0;
         string MesPreSelected;
         int MesSelected = 0;
@@ -3309,8 +3310,6 @@ namespace Tesalia_Redes_App
         {
             try
             {
-                Microsoft.Office.Interop.Excel.Application Excel = new Microsoft.Office.Interop.Excel.Application();
-
                 if (File.Exists(Application.StartupPath + @"\Plantilla.data"))
                 {
                     File.Copy(Application.StartupPath + @"\Plantilla.data", Application.StartupPath + @"\Jornadas\Registro de Jornada de " + MesPreSelected + " del " + YearSelected.ToString() + ".xlsx", true);
@@ -5397,6 +5396,8 @@ namespace Tesalia_Redes_App
                 {
                     MessageBox.Show("ERROR: " + ex, "Tesalia Redes", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     Properties.Settings.Default.Installing = "0";
+                    Excel.Application.Quit();
+                    Excel.Quit();
                 }
             }
             catch (Exception ex)
@@ -5404,6 +5405,8 @@ namespace Tesalia_Redes_App
                 MessageBox.Show("ERROR: " + ex, "Tesalia Redes", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 MessageBox.Show("Revisa si has introducido algún caracter incorrecto en algún campo.", "Tesalia Redes - Registro de jornada", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Properties.Settings.Default.Installing = "0";
+                Excel.Application.Quit();
+                Excel.Quit();
             }
         }
         #endregion

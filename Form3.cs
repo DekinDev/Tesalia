@@ -77,7 +77,7 @@ namespace Tesalia_Redes_App
                             correo.Subject = (Asunto.Text);
                             correo.Priority = MailPriority.High;
                             correo.IsBodyHtml = false;
-                            correo.Body = Mensaje.Text + "\r\rEnviado desde Tesalia Redes App";
+                            correo.Body = Mensaje.Text + "\r\r(Enviado desde Tesalia Redes App)";
 
                             if (Properties.Settings.Default.CorreoType == "0")
                             {
