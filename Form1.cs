@@ -5480,6 +5480,7 @@ namespace Tesalia_Redes_App
             if (Properties.Settings.Default.RutaFirma != "")
             {
                 Firma.BackgroundImage = Image.FromFile(Properties.Settings.Default.RutaFirma);
+                RutaFirmaS = Properties.Settings.Default.RutaFirma;
             }
             CorreoTXT.Text = Properties.Settings.Default.MailMail;
             PassTXT.Text = Properties.Settings.Default.MailPass;
