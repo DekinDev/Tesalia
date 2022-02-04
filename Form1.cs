@@ -36,6 +36,17 @@ namespace Tesalia_Redes_App
                 Meses2.Text = construct;
             }
 
+            if (string.IsNullOrEmpty(Properties.Settings.Default.Year) == false)
+            {
+                Years1.Text = Properties.Settings.Default.Year;
+                Years2.Text = Properties.Settings.Default.Year;
+            }
+            if (string.IsNullOrEmpty(Properties.Settings.Default.Mes) == false)
+            {
+                Meses1.Text = Properties.Settings.Default.Mes;
+                Meses2.Text = Properties.Settings.Default.Mes;
+            }
+
             this.DoubleBuffered = true;
             this.SetStyle(ControlStyles.ResizeRedraw, true);
 
@@ -3011,6 +3022,7 @@ namespace Tesalia_Redes_App
 
             Properties.Settings.Default.Mes = Meses1.Text;
             Properties.Settings.Default.Year = Years1.Text;
+
 
             List<string> ListChecks = new List<string>
             {

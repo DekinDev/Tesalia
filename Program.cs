@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,16 +15,17 @@ namespace Tesalia_Redes_App
         [STAThread]
         static void Main()
         {
-            Properties.Settings.Default.Upgrade();
-            Properties.Settings.Default.Save();
-            Properties.Settings.Default.Reload();
-
+            if(File.Exists(Application.StartupPath + @"\Update\update.zip"))
+            {
+                Properties.Settings.Default.Upgrade();
+                Properties.Settings.Default.Save();
+                Properties.Settings.Default.Reload();
+                File.Delete(Application.StartupPath + @"\Update\update.zip");
+            }
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form4());
-
-            Properties.Settings.Default.Save();
-            Properties.Settings.Default.Reload();
         }
     }
 }
