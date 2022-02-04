@@ -5685,7 +5685,7 @@ namespace Tesalia_Redes_App
         #region MI CUENTA
         private void FirmaAdd_Click(object sender, EventArgs e)
         {
-            openFileDialog1.InitialDirectory = System.Windows.Forms.Application.StartupPath;
+            openFileDialog1.InitialDirectory = Application.StartupPath;
             openFileDialog1.RestoreDirectory = false;
             openFileDialog1.Title = "Buscar Firma";
             openFileDialog1.Filter = "PNG|*.png";
@@ -5695,9 +5695,13 @@ namespace Tesalia_Redes_App
             {
                 if (openFileDialog1.FileName != "")
                 {
-                    File.Copy(openFileDialog1.FileName, System.Windows.Forms.Application.StartupPath + @"\Resources\Firma.png", true);
-                    Firma.BackgroundImage = Image.FromFile(System.Windows.Forms.Application.StartupPath + @"\Resources\Firma.png");
-                    RutaFirmaS = System.Windows.Forms.Application.StartupPath + @"\Resources\Firma.png";
+                    if (Firma.BackgroundImage != null)
+                    {
+                        Firma.BackgroundImage.Dispose();
+                    }
+                    File.Copy(openFileDialog1.FileName, Application.StartupPath + @"\Resources\Firma.png", true);
+                    Firma.BackgroundImage = Image.FromFile(Application.StartupPath + @"\Resources\Firma.png");
+                    RutaFirmaS = Application.StartupPath + @"\Resources\Firma.png";
                 }
             }
             catch (Exception ex)
@@ -7344,5 +7348,10 @@ namespace Tesalia_Redes_App
             }
         }
         #endregion
+
+        private void webBrowser1_Navigated(object sender, WebBrowserNavigatedEventArgs e)
+        {
+            webBrowser1.Visible = true;
+        }
     }
 }

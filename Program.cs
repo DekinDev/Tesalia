@@ -14,9 +14,16 @@ namespace Tesalia_Redes_App
         [STAThread]
         static void Main()
         {
+            Properties.Settings.Default.Upgrade();
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Reload();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form4());
+
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Reload();
         }
     }
 }

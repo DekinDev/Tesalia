@@ -177,6 +177,7 @@
     <Content Include="DotNetZip.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\preload.png" />
     <Content Include="Resources\Tesalia Logo2.png" />
     <Content Include="Updater.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

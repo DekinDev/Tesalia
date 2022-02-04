@@ -64,10 +64,6 @@ namespace Tesalia_Redes_App
 
         private void Form4_Load(object sender, EventArgs e)
         {
-            Properties.Settings.Default.Upgrade();
-            Properties.Settings.Default.Save();
-            Properties.Settings.Default.Reload();
-
             if (Properties.Settings.Default.ActivarPassCC == "0")
             {
                 this.Hide();

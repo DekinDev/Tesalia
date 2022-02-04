@@ -63,6 +63,16 @@ namespace Tesalia_Redes_App.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap preload {
+            get {
+                object obj = ResourceManager.GetObject("preload", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Tesalia_Logo2 {
             get {
                 object obj = ResourceManager.GetObject("Tesalia Logo2", resourceCulture);
