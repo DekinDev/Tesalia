@@ -3058,285 +3058,309 @@ namespace Tesalia_Redes_App
                 Extra30.CheckState.ToString(),
                 Extra31.CheckState.ToString()
             };
-            Properties.Settings.Default.Checks = String.Join(",", ListChecks.ToArray());
 
-            CultureInfo ci = new CultureInfo("ES-ES");
-            DateTime Days1 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 1);
-            if (ComboDays.Text.ToLower() == (Days1.ToString("dddd", ci) + " - " + Days1.ToString("dd")).ToLower())
+            int MiniJornada = 0;
+
+            if (string.IsNullOrEmpty(EM0.Text) == false)
             {
-                Properties.Settings.Default.EM1 = EM0.Text;
-                Properties.Settings.Default.SM1 = SM0.Text;
-                Properties.Settings.Default.ET1 = ET0.Text;
-                Properties.Settings.Default.ST1 = ST0.Text;
+                MiniJornada = 1;
             }
-            DateTime Days2 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 2);
-            if (ComboDays.Text.ToLower() == (Days2.ToString("dddd", ci) + " - " + Days2.ToString("dd")).ToLower())
+            if (string.IsNullOrEmpty(EM0.Text) == false)
             {
-                Properties.Settings.Default.EM2 = EM0.Text;
-                Properties.Settings.Default.SM2 = SM0.Text;
-                Properties.Settings.Default.ET2 = ET0.Text;
-                Properties.Settings.Default.ST2 = ST0.Text;
+                MiniJornada = 1;
             }
-            DateTime Days3 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 3);
-            if (ComboDays.Text.ToLower() == (Days3.ToString("dddd", ci) + " - " + Days3.ToString("dd")).ToLower())
+            if (string.IsNullOrEmpty(EM0.Text) == false)
             {
-                Properties.Settings.Default.EM3 = EM0.Text;
-                Properties.Settings.Default.SM3 = SM0.Text;
-                Properties.Settings.Default.ET3 = ET0.Text;
-                Properties.Settings.Default.ST3 = ST0.Text;
+                MiniJornada = 1;
             }
-            DateTime Days4 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 4);
-            if (ComboDays.Text.ToLower() == (Days4.ToString("dddd", ci) + " - " + Days4.ToString("dd")).ToLower())
+            if (string.IsNullOrEmpty(EM0.Text) == false)
             {
-                Properties.Settings.Default.EM4 = EM0.Text;
-                Properties.Settings.Default.SM4 = SM0.Text;
-                Properties.Settings.Default.ET4 = ET0.Text;
-                Properties.Settings.Default.ST4 = ST0.Text;
+                MiniJornada = 1;
             }
-            DateTime Days5 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 5);
-            if (ComboDays.Text.ToLower() == (Days5.ToString("dddd", ci) + " - " + Days5.ToString("dd")).ToLower())
+
+            if (MiniJornada == 1)
             {
-                Properties.Settings.Default.EM5 = EM0.Text;
-                Properties.Settings.Default.SM5 = SM0.Text;
-                Properties.Settings.Default.ET5 = ET0.Text;
-                Properties.Settings.Default.ST5 = ST0.Text;
-            }
-            DateTime Days6 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 6);
-            if (ComboDays.Text.ToLower() == (Days6.ToString("dddd", ci) + " - " + Days6.ToString("dd")).ToLower())
-            {
-                Properties.Settings.Default.EM6 = EM0.Text;
-                Properties.Settings.Default.SM6 = SM0.Text;
-                Properties.Settings.Default.ET6 = ET0.Text;
-                Properties.Settings.Default.ST6 = ST0.Text;
-            }
-            DateTime Days7 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 7);
-            if (ComboDays.Text.ToLower() == (Days7.ToString("dddd", ci) + " - " + Days7.ToString("dd")).ToLower())
-            {
-                Properties.Settings.Default.EM7 = EM0.Text;
-                Properties.Settings.Default.SM7 = SM0.Text;
-                Properties.Settings.Default.ET7 = ET0.Text;
-                Properties.Settings.Default.ST7 = ST0.Text;
-            }
-            DateTime Days8 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 8);
-            if (ComboDays.Text.ToLower() == (Days8.ToString("dddd", ci) + " - " + Days8.ToString("dd")).ToLower())
-            {
-                Properties.Settings.Default.EM8 = EM0.Text;
-                Properties.Settings.Default.SM8 = SM0.Text;
-                Properties.Settings.Default.ET8 = ET0.Text;
-                Properties.Settings.Default.ST8 = ST0.Text;
-            }
-            DateTime Days9 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 9);
-            if (ComboDays.Text.ToLower() == (Days9.ToString("dddd", ci) + " - " + Days9.ToString("dd")).ToLower())
-            {
-                Properties.Settings.Default.EM9 = EM0.Text;
-                Properties.Settings.Default.SM9 = SM0.Text;
-                Properties.Settings.Default.ET9 = ET0.Text;
-                Properties.Settings.Default.ST9 = ST0.Text;
-            }
-            DateTime Days10 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 10);
-            if (ComboDays.Text.ToLower() == (Days10.ToString("dddd", ci) + " - " + Days10.ToString("dd")).ToLower())
-            {
-                Properties.Settings.Default.EM10 = EM0.Text;
-                Properties.Settings.Default.SM10 = SM0.Text;
-                Properties.Settings.Default.ET10 = ET0.Text;
-                Properties.Settings.Default.ST10 = ST0.Text;
-            }
-            DateTime Days11 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 11);
-            if (ComboDays.Text.ToLower() == (Days11.ToString("dddd", ci) + " - " + Days11.ToString("dd")).ToLower())
-            {
-                Properties.Settings.Default.EM11 = EM0.Text;
-                Properties.Settings.Default.SM11 = SM0.Text;
-                Properties.Settings.Default.ET11 = ET0.Text;
-                Properties.Settings.Default.ST11 = ST0.Text;
-            }
-            DateTime Days12 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 12);
-            if (ComboDays.Text.ToLower() == (Days12.ToString("dddd", ci) + " - " + Days12.ToString("dd")).ToLower())
-            {
-                Properties.Settings.Default.EM12 = EM0.Text;
-                Properties.Settings.Default.SM12 = SM0.Text;
-                Properties.Settings.Default.ET12 = ET0.Text;
-                Properties.Settings.Default.ST12 = ST0.Text;
-            }
-            DateTime Days13 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 13);
-            if (ComboDays.Text.ToLower() == (Days13.ToString("dddd", ci) + " - " + Days13.ToString("dd")).ToLower())
-            {
-                Properties.Settings.Default.EM13 = EM0.Text;
-                Properties.Settings.Default.SM13 = SM0.Text;
-                Properties.Settings.Default.ET13 = ET0.Text;
-                Properties.Settings.Default.ST13 = ST0.Text;
-            }
-            DateTime Days14 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 14);
-            if (ComboDays.Text.ToLower() == (Days14.ToString("dddd", ci) + " - " + Days14.ToString("dd")).ToLower())
-            {
-                Properties.Settings.Default.EM14 = EM0.Text;
-                Properties.Settings.Default.SM14 = SM0.Text;
-                Properties.Settings.Default.ET14 = ET0.Text;
-                Properties.Settings.Default.ST14 = ST0.Text;
-            }
-            DateTime Days15 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 15);
-            if (ComboDays.Text.ToLower() == (Days15.ToString("dddd", ci) + " - " + Days15.ToString("dd")).ToLower())
-            {
-                Properties.Settings.Default.EM15 = EM0.Text;
-                Properties.Settings.Default.SM15 = SM0.Text;
-                Properties.Settings.Default.ET15 = ET0.Text;
-                Properties.Settings.Default.ST15 = ST0.Text;
-            }
-            DateTime Days16 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 16);
-            if (ComboDays.Text.ToLower() == (Days16.ToString("dddd", ci) + " - " + Days16.ToString("dd")).ToLower())
-            {
-                Properties.Settings.Default.EM16 = EM0.Text;
-                Properties.Settings.Default.SM16 = SM0.Text;
-                Properties.Settings.Default.ET16 = ET0.Text;
-                Properties.Settings.Default.ST16 = ST0.Text;
-            }
-            DateTime Days17 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 17);
-            if (ComboDays.Text.ToLower() == (Days17.ToString("dddd", ci) + " - " + Days17.ToString("dd")).ToLower())
-            {
-                Properties.Settings.Default.EM17 = EM0.Text;
-                Properties.Settings.Default.SM17 = SM0.Text;
-                Properties.Settings.Default.ET17 = ET0.Text;
-                Properties.Settings.Default.ST17 = ST0.Text;
-            }
-            DateTime Days18 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 18);
-            if (ComboDays.Text.ToLower() == (Days18.ToString("dddd", ci) + " - " + Days18.ToString("dd")).ToLower())
-            {
-                Properties.Settings.Default.EM18 = EM0.Text;
-                Properties.Settings.Default.SM18 = SM0.Text;
-                Properties.Settings.Default.ET18 = ET0.Text;
-                Properties.Settings.Default.ST18 = ST0.Text;
-            }
-            DateTime Days19 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 19);
-            if (ComboDays.Text.ToLower() == (Days19.ToString("dddd", ci) + " - " + Days19.ToString("dd")).ToLower())
-            {
-                Properties.Settings.Default.EM19 = EM0.Text;
-                Properties.Settings.Default.SM19 = SM0.Text;
-                Properties.Settings.Default.ET19 = ET0.Text;
-                Properties.Settings.Default.ST19 = ST0.Text;
-            }
-            DateTime Days20 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 20);
-            if (ComboDays.Text.ToLower() == (Days20.ToString("dddd", ci) + " - " + Days20.ToString("dd")).ToLower())
-            {
-                Properties.Settings.Default.EM20 = EM0.Text;
-                Properties.Settings.Default.SM20 = SM0.Text;
-                Properties.Settings.Default.ET20 = ET0.Text;
-                Properties.Settings.Default.ST20 = ST0.Text;
-            }
-            DateTime Days21 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 21);
-            if (ComboDays.Text.ToLower() == (Days21.ToString("dddd", ci) + " - " + Days21.ToString("dd")).ToLower())
-            {
-                Properties.Settings.Default.EM21 = EM0.Text;
-                Properties.Settings.Default.SM21 = SM0.Text;
-                Properties.Settings.Default.ET21 = ET0.Text;
-                Properties.Settings.Default.ST21 = ST0.Text;
-            }
-            DateTime Days22 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 22);
-            if (ComboDays.Text.ToLower() == (Days22.ToString("dddd", ci) + " - " + Days22.ToString("dd")).ToLower())
-            {
-                Properties.Settings.Default.EM22 = EM0.Text;
-                Properties.Settings.Default.SM22 = SM0.Text;
-                Properties.Settings.Default.ET22 = ET0.Text;
-                Properties.Settings.Default.ST22 = ST0.Text;
-            }
-            DateTime Days23 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 23);
-            if (ComboDays.Text.ToLower() == (Days23.ToString("dddd", ci) + " - " + Days23.ToString("dd")).ToLower())
-            {
-                Properties.Settings.Default.EM23 = EM0.Text;
-                Properties.Settings.Default.SM23 = SM0.Text;
-                Properties.Settings.Default.ET23 = ET0.Text;
-                Properties.Settings.Default.ST23 = ST0.Text;
-            }
-            DateTime Days24 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 24);
-            if (ComboDays.Text.ToLower() == (Days24.ToString("dddd", ci) + " - " + Days24.ToString("dd")).ToLower())
-            {
-                Properties.Settings.Default.EM24 = EM0.Text;
-                Properties.Settings.Default.SM24 = SM0.Text;
-                Properties.Settings.Default.ET24 = ET0.Text;
-                Properties.Settings.Default.ST24 = ST0.Text;
-            }
-            try
-            {
-                DateTime Days25 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 25);
-                if (ComboDays.Text.ToLower() == (Days25.ToString("dddd", ci) + " - " + Days25.ToString("dd")).ToLower())
+                Properties.Settings.Default.Checks = String.Join(",", ListChecks.ToArray());
+
+                CultureInfo ci = new CultureInfo("ES-ES");
+                DateTime Days1 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 1);
+                if (ComboDays.Text.ToLower() == (Days1.ToString("dddd", ci) + " - " + Days1.ToString("dd")).ToLower())
                 {
-                    Properties.Settings.Default.EM25 = EM0.Text;
-                    Properties.Settings.Default.SM25 = SM0.Text;
-                    Properties.Settings.Default.ET25 = ET0.Text;
-                    Properties.Settings.Default.ST25 = ST0.Text;
+                    Properties.Settings.Default.EM1 = EM0.Text;
+                    Properties.Settings.Default.SM1 = SM0.Text;
+                    Properties.Settings.Default.ET1 = ET0.Text;
+                    Properties.Settings.Default.ST1 = ST0.Text;
                 }
-            }
-            catch { }
-            try
-            {
-                DateTime Days26 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 26);
-                if (ComboDays.Text.ToLower() == (Days26.ToString("dddd", ci) + " - " + Days26.ToString("dd")).ToLower())
+                DateTime Days2 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 2);
+                if (ComboDays.Text.ToLower() == (Days2.ToString("dddd", ci) + " - " + Days2.ToString("dd")).ToLower())
                 {
-                    Properties.Settings.Default.EM26 = EM0.Text;
-                    Properties.Settings.Default.SM26 = SM0.Text;
-                    Properties.Settings.Default.ET26 = ET0.Text;
-                    Properties.Settings.Default.ST26 = ST0.Text;
+                    Properties.Settings.Default.EM2 = EM0.Text;
+                    Properties.Settings.Default.SM2 = SM0.Text;
+                    Properties.Settings.Default.ET2 = ET0.Text;
+                    Properties.Settings.Default.ST2 = ST0.Text;
                 }
-            }
-            catch { }
-            try
-            {
-                DateTime Days27 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 27);
-                if (ComboDays.Text.ToLower() == (Days27.ToString("dddd", ci) + " - " + Days27.ToString("dd")).ToLower())
+                DateTime Days3 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 3);
+                if (ComboDays.Text.ToLower() == (Days3.ToString("dddd", ci) + " - " + Days3.ToString("dd")).ToLower())
                 {
-                    Properties.Settings.Default.EM27 = EM0.Text;
-                    Properties.Settings.Default.SM27 = SM0.Text;
-                    Properties.Settings.Default.ET27 = ET0.Text;
-                    Properties.Settings.Default.ST27 = ST0.Text;
+                    Properties.Settings.Default.EM3 = EM0.Text;
+                    Properties.Settings.Default.SM3 = SM0.Text;
+                    Properties.Settings.Default.ET3 = ET0.Text;
+                    Properties.Settings.Default.ST3 = ST0.Text;
                 }
-            }
-            catch { }
-            try
-            {
-                DateTime Days28 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 28);
-                if (ComboDays.Text.ToLower() == (Days28.ToString("dddd", ci) + " - " + Days28.ToString("dd")).ToLower())
+                DateTime Days4 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 4);
+                if (ComboDays.Text.ToLower() == (Days4.ToString("dddd", ci) + " - " + Days4.ToString("dd")).ToLower())
                 {
-                    Properties.Settings.Default.EM28 = EM0.Text;
-                    Properties.Settings.Default.SM28 = SM0.Text;
-                    Properties.Settings.Default.ET28 = ET0.Text;
-                    Properties.Settings.Default.ST28 = ST0.Text;
+                    Properties.Settings.Default.EM4 = EM0.Text;
+                    Properties.Settings.Default.SM4 = SM0.Text;
+                    Properties.Settings.Default.ET4 = ET0.Text;
+                    Properties.Settings.Default.ST4 = ST0.Text;
                 }
-            }
-            catch { }
-            try
-            {
-                DateTime Days29 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 29);
-                if (ComboDays.Text.ToLower() == (Days29.ToString("dddd", ci) + " - " + Days29.ToString("dd")).ToLower())
+                DateTime Days5 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 5);
+                if (ComboDays.Text.ToLower() == (Days5.ToString("dddd", ci) + " - " + Days5.ToString("dd")).ToLower())
                 {
-                    Properties.Settings.Default.EM29 = EM0.Text;
-                    Properties.Settings.Default.SM29 = SM0.Text;
-                    Properties.Settings.Default.ET29 = ET0.Text;
-                    Properties.Settings.Default.ST29 = ST0.Text;
+                    Properties.Settings.Default.EM5 = EM0.Text;
+                    Properties.Settings.Default.SM5 = SM0.Text;
+                    Properties.Settings.Default.ET5 = ET0.Text;
+                    Properties.Settings.Default.ST5 = ST0.Text;
                 }
-            }
-            catch { }
-            try
-            {
-                DateTime Days30 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 30);
-                if (ComboDays.Text.ToLower() == (Days30.ToString("dddd", ci) + " - " + Days30.ToString("dd")).ToLower())
+                DateTime Days6 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 6);
+                if (ComboDays.Text.ToLower() == (Days6.ToString("dddd", ci) + " - " + Days6.ToString("dd")).ToLower())
                 {
-                    Properties.Settings.Default.EM30 = EM0.Text;
-                    Properties.Settings.Default.SM30 = SM0.Text;
-                    Properties.Settings.Default.ET30 = ET0.Text;
-                    Properties.Settings.Default.ST30 = ST0.Text;
+                    Properties.Settings.Default.EM6 = EM0.Text;
+                    Properties.Settings.Default.SM6 = SM0.Text;
+                    Properties.Settings.Default.ET6 = ET0.Text;
+                    Properties.Settings.Default.ST6 = ST0.Text;
                 }
-            }
-            catch { }
-            try
-            {
-                DateTime Days31 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 31);
-                if (ComboDays.Text.ToLower() == (Days31.ToString("dddd", ci) + " - " + Days31.ToString("dd")).ToLower())
+                DateTime Days7 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 7);
+                if (ComboDays.Text.ToLower() == (Days7.ToString("dddd", ci) + " - " + Days7.ToString("dd")).ToLower())
                 {
-                    Properties.Settings.Default.EM31 = EM0.Text;
-                    Properties.Settings.Default.SM31 = SM0.Text;
-                    Properties.Settings.Default.ET31 = ET0.Text;
-                    Properties.Settings.Default.ST31 = ST0.Text;
+                    Properties.Settings.Default.EM7 = EM0.Text;
+                    Properties.Settings.Default.SM7 = SM0.Text;
+                    Properties.Settings.Default.ET7 = ET0.Text;
+                    Properties.Settings.Default.ST7 = ST0.Text;
                 }
+                DateTime Days8 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 8);
+                if (ComboDays.Text.ToLower() == (Days8.ToString("dddd", ci) + " - " + Days8.ToString("dd")).ToLower())
+                {
+                    Properties.Settings.Default.EM8 = EM0.Text;
+                    Properties.Settings.Default.SM8 = SM0.Text;
+                    Properties.Settings.Default.ET8 = ET0.Text;
+                    Properties.Settings.Default.ST8 = ST0.Text;
+                }
+                DateTime Days9 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 9);
+                if (ComboDays.Text.ToLower() == (Days9.ToString("dddd", ci) + " - " + Days9.ToString("dd")).ToLower())
+                {
+                    Properties.Settings.Default.EM9 = EM0.Text;
+                    Properties.Settings.Default.SM9 = SM0.Text;
+                    Properties.Settings.Default.ET9 = ET0.Text;
+                    Properties.Settings.Default.ST9 = ST0.Text;
+                }
+                DateTime Days10 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 10);
+                if (ComboDays.Text.ToLower() == (Days10.ToString("dddd", ci) + " - " + Days10.ToString("dd")).ToLower())
+                {
+                    Properties.Settings.Default.EM10 = EM0.Text;
+                    Properties.Settings.Default.SM10 = SM0.Text;
+                    Properties.Settings.Default.ET10 = ET0.Text;
+                    Properties.Settings.Default.ST10 = ST0.Text;
+                }
+                DateTime Days11 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 11);
+                if (ComboDays.Text.ToLower() == (Days11.ToString("dddd", ci) + " - " + Days11.ToString("dd")).ToLower())
+                {
+                    Properties.Settings.Default.EM11 = EM0.Text;
+                    Properties.Settings.Default.SM11 = SM0.Text;
+                    Properties.Settings.Default.ET11 = ET0.Text;
+                    Properties.Settings.Default.ST11 = ST0.Text;
+                }
+                DateTime Days12 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 12);
+                if (ComboDays.Text.ToLower() == (Days12.ToString("dddd", ci) + " - " + Days12.ToString("dd")).ToLower())
+                {
+                    Properties.Settings.Default.EM12 = EM0.Text;
+                    Properties.Settings.Default.SM12 = SM0.Text;
+                    Properties.Settings.Default.ET12 = ET0.Text;
+                    Properties.Settings.Default.ST12 = ST0.Text;
+                }
+                DateTime Days13 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 13);
+                if (ComboDays.Text.ToLower() == (Days13.ToString("dddd", ci) + " - " + Days13.ToString("dd")).ToLower())
+                {
+                    Properties.Settings.Default.EM13 = EM0.Text;
+                    Properties.Settings.Default.SM13 = SM0.Text;
+                    Properties.Settings.Default.ET13 = ET0.Text;
+                    Properties.Settings.Default.ST13 = ST0.Text;
+                }
+                DateTime Days14 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 14);
+                if (ComboDays.Text.ToLower() == (Days14.ToString("dddd", ci) + " - " + Days14.ToString("dd")).ToLower())
+                {
+                    Properties.Settings.Default.EM14 = EM0.Text;
+                    Properties.Settings.Default.SM14 = SM0.Text;
+                    Properties.Settings.Default.ET14 = ET0.Text;
+                    Properties.Settings.Default.ST14 = ST0.Text;
+                }
+                DateTime Days15 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 15);
+                if (ComboDays.Text.ToLower() == (Days15.ToString("dddd", ci) + " - " + Days15.ToString("dd")).ToLower())
+                {
+                    Properties.Settings.Default.EM15 = EM0.Text;
+                    Properties.Settings.Default.SM15 = SM0.Text;
+                    Properties.Settings.Default.ET15 = ET0.Text;
+                    Properties.Settings.Default.ST15 = ST0.Text;
+                }
+                DateTime Days16 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 16);
+                if (ComboDays.Text.ToLower() == (Days16.ToString("dddd", ci) + " - " + Days16.ToString("dd")).ToLower())
+                {
+                    Properties.Settings.Default.EM16 = EM0.Text;
+                    Properties.Settings.Default.SM16 = SM0.Text;
+                    Properties.Settings.Default.ET16 = ET0.Text;
+                    Properties.Settings.Default.ST16 = ST0.Text;
+                }
+                DateTime Days17 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 17);
+                if (ComboDays.Text.ToLower() == (Days17.ToString("dddd", ci) + " - " + Days17.ToString("dd")).ToLower())
+                {
+                    Properties.Settings.Default.EM17 = EM0.Text;
+                    Properties.Settings.Default.SM17 = SM0.Text;
+                    Properties.Settings.Default.ET17 = ET0.Text;
+                    Properties.Settings.Default.ST17 = ST0.Text;
+                }
+                DateTime Days18 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 18);
+                if (ComboDays.Text.ToLower() == (Days18.ToString("dddd", ci) + " - " + Days18.ToString("dd")).ToLower())
+                {
+                    Properties.Settings.Default.EM18 = EM0.Text;
+                    Properties.Settings.Default.SM18 = SM0.Text;
+                    Properties.Settings.Default.ET18 = ET0.Text;
+                    Properties.Settings.Default.ST18 = ST0.Text;
+                }
+                DateTime Days19 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 19);
+                if (ComboDays.Text.ToLower() == (Days19.ToString("dddd", ci) + " - " + Days19.ToString("dd")).ToLower())
+                {
+                    Properties.Settings.Default.EM19 = EM0.Text;
+                    Properties.Settings.Default.SM19 = SM0.Text;
+                    Properties.Settings.Default.ET19 = ET0.Text;
+                    Properties.Settings.Default.ST19 = ST0.Text;
+                }
+                DateTime Days20 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 20);
+                if (ComboDays.Text.ToLower() == (Days20.ToString("dddd", ci) + " - " + Days20.ToString("dd")).ToLower())
+                {
+                    Properties.Settings.Default.EM20 = EM0.Text;
+                    Properties.Settings.Default.SM20 = SM0.Text;
+                    Properties.Settings.Default.ET20 = ET0.Text;
+                    Properties.Settings.Default.ST20 = ST0.Text;
+                }
+                DateTime Days21 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 21);
+                if (ComboDays.Text.ToLower() == (Days21.ToString("dddd", ci) + " - " + Days21.ToString("dd")).ToLower())
+                {
+                    Properties.Settings.Default.EM21 = EM0.Text;
+                    Properties.Settings.Default.SM21 = SM0.Text;
+                    Properties.Settings.Default.ET21 = ET0.Text;
+                    Properties.Settings.Default.ST21 = ST0.Text;
+                }
+                DateTime Days22 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 22);
+                if (ComboDays.Text.ToLower() == (Days22.ToString("dddd", ci) + " - " + Days22.ToString("dd")).ToLower())
+                {
+                    Properties.Settings.Default.EM22 = EM0.Text;
+                    Properties.Settings.Default.SM22 = SM0.Text;
+                    Properties.Settings.Default.ET22 = ET0.Text;
+                    Properties.Settings.Default.ST22 = ST0.Text;
+                }
+                DateTime Days23 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 23);
+                if (ComboDays.Text.ToLower() == (Days23.ToString("dddd", ci) + " - " + Days23.ToString("dd")).ToLower())
+                {
+                    Properties.Settings.Default.EM23 = EM0.Text;
+                    Properties.Settings.Default.SM23 = SM0.Text;
+                    Properties.Settings.Default.ET23 = ET0.Text;
+                    Properties.Settings.Default.ST23 = ST0.Text;
+                }
+                DateTime Days24 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 24);
+                if (ComboDays.Text.ToLower() == (Days24.ToString("dddd", ci) + " - " + Days24.ToString("dd")).ToLower())
+                {
+                    Properties.Settings.Default.EM24 = EM0.Text;
+                    Properties.Settings.Default.SM24 = SM0.Text;
+                    Properties.Settings.Default.ET24 = ET0.Text;
+                    Properties.Settings.Default.ST24 = ST0.Text;
+                }
+                try
+                {
+                    DateTime Days25 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 25);
+                    if (ComboDays.Text.ToLower() == (Days25.ToString("dddd", ci) + " - " + Days25.ToString("dd")).ToLower())
+                    {
+                        Properties.Settings.Default.EM25 = EM0.Text;
+                        Properties.Settings.Default.SM25 = SM0.Text;
+                        Properties.Settings.Default.ET25 = ET0.Text;
+                        Properties.Settings.Default.ST25 = ST0.Text;
+                    }
+                }
+                catch { }
+                try
+                {
+                    DateTime Days26 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 26);
+                    if (ComboDays.Text.ToLower() == (Days26.ToString("dddd", ci) + " - " + Days26.ToString("dd")).ToLower())
+                    {
+                        Properties.Settings.Default.EM26 = EM0.Text;
+                        Properties.Settings.Default.SM26 = SM0.Text;
+                        Properties.Settings.Default.ET26 = ET0.Text;
+                        Properties.Settings.Default.ST26 = ST0.Text;
+                    }
+                }
+                catch { }
+                try
+                {
+                    DateTime Days27 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 27);
+                    if (ComboDays.Text.ToLower() == (Days27.ToString("dddd", ci) + " - " + Days27.ToString("dd")).ToLower())
+                    {
+                        Properties.Settings.Default.EM27 = EM0.Text;
+                        Properties.Settings.Default.SM27 = SM0.Text;
+                        Properties.Settings.Default.ET27 = ET0.Text;
+                        Properties.Settings.Default.ST27 = ST0.Text;
+                    }
+                }
+                catch { }
+                try
+                {
+                    DateTime Days28 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 28);
+                    if (ComboDays.Text.ToLower() == (Days28.ToString("dddd", ci) + " - " + Days28.ToString("dd")).ToLower())
+                    {
+                        Properties.Settings.Default.EM28 = EM0.Text;
+                        Properties.Settings.Default.SM28 = SM0.Text;
+                        Properties.Settings.Default.ET28 = ET0.Text;
+                        Properties.Settings.Default.ST28 = ST0.Text;
+                    }
+                }
+                catch { }
+                try
+                {
+                    DateTime Days29 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 29);
+                    if (ComboDays.Text.ToLower() == (Days29.ToString("dddd", ci) + " - " + Days29.ToString("dd")).ToLower())
+                    {
+                        Properties.Settings.Default.EM29 = EM0.Text;
+                        Properties.Settings.Default.SM29 = SM0.Text;
+                        Properties.Settings.Default.ET29 = ET0.Text;
+                        Properties.Settings.Default.ST29 = ST0.Text;
+                    }
+                }
+                catch { }
+                try
+                {
+                    DateTime Days30 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 30);
+                    if (ComboDays.Text.ToLower() == (Days30.ToString("dddd", ci) + " - " + Days30.ToString("dd")).ToLower())
+                    {
+                        Properties.Settings.Default.EM30 = EM0.Text;
+                        Properties.Settings.Default.SM30 = SM0.Text;
+                        Properties.Settings.Default.ET30 = ET0.Text;
+                        Properties.Settings.Default.ST30 = ST0.Text;
+                    }
+                }
+                catch { }
+                try
+                {
+                    DateTime Days31 = new DateTime(Convert.ToInt32(YearSelected), MesSelected, 31);
+                    if (ComboDays.Text.ToLower() == (Days31.ToString("dddd", ci) + " - " + Days31.ToString("dd")).ToLower())
+                    {
+                        Properties.Settings.Default.EM31 = EM0.Text;
+                        Properties.Settings.Default.SM31 = SM0.Text;
+                        Properties.Settings.Default.ET31 = ET0.Text;
+                        Properties.Settings.Default.ST31 = ST0.Text;
+                    }
+                }
+                catch { }
             }
-            catch { }
+            
 
             Properties.Settings.Default.Save();
             Properties.Settings.Default.Reload();
