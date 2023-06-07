@@ -7308,10 +7308,10 @@ namespace Tesalia_Redes_App
         private void Version_Click(object sender, EventArgs e)
         {
             var client = new WebClient();
-            string response = client.DownloadString("https://raw.githubusercontent.com/DualPlaysX/Tesalia/main/version?token=GHSAT0AAAAAABQ5LA6JI72QTBJYXW24XPQEYPP2DEA").Replace("\n", "");
+            string response = client.DownloadString("https://raw.githubusercontent.com/DekinDev/Tesalia/main/version").Replace("\n", "");
 
             WebClient mywebClient = new WebClient();
-            mywebClient.DownloadFile("https://github.com/DualPlaysX/Tesalia/raw/main/Updater.exe", Application.StartupPath + @"\Updater.new");
+            mywebClient.DownloadFile("https://github.com/DekinDev/Tesalia/raw/main/Updater.exe", Application.StartupPath + @"\Updater.new");
 
             if (File.Exists(Application.StartupPath + @"\Updater.new"))
             {
