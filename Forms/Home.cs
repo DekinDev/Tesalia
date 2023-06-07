@@ -752,7 +752,13 @@ namespace Tesalia_Redes_App
             if (FormLoaded == 1)
             {
                 FechaConstruct();
-                CleanJornada();
+                if (Meses1.Text != Properties.Settings.Default.Mes)
+                {
+                    if (Years1.Text != Properties.Settings.Default.Mes)
+                    {
+                        CleanJornada();
+                    }
+                }
             }
         }
         private void Years1_SelectedIndexChanged(object sender, EventArgs e)
@@ -765,7 +771,13 @@ namespace Tesalia_Redes_App
             if (FormLoaded == 1)
             {
                 FechaConstruct();
-                CleanJornada();
+                if (Meses1.Text != Properties.Settings.Default.Mes)
+                {
+                    if (Years1.Text != Properties.Settings.Default.Mes)
+                    {
+                        CleanJornada();
+                    }
+                }
             }
         }
         private void Meses2_SelectedIndexChanged(object sender, EventArgs e)
@@ -778,8 +790,15 @@ namespace Tesalia_Redes_App
             if (FormLoaded == 1)
             {
                 FechaConstruct();
-                CleanJornada();
+                if (Meses2.Text != Properties.Settings.Default.Mes)
+                {
+                    if (Years2.Text != Properties.Settings.Default.Mes)
+                    {
+                        CleanJornada();
+                    }
+                }
             }
+
         }
         private void Years2_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -787,14 +806,20 @@ namespace Tesalia_Redes_App
             Meses1.Text = Meses2.Text;
             Years1.Text = Years2.Text;
             YearSelected = Convert.ToInt32(Years1.Text);
-            
             ColorDays();
             if (FormLoaded == 1)
             {
                 FechaConstruct();
-                CleanJornada();
+                if (Meses2.Text == Properties.Settings.Default.Mes)
+                {
+                    if (Years2.Text == Properties.Settings.Default.Mes)
+                    {
+                        CleanJornada();
+                    }
+                }
             }
         }
+
         private void ComboDays_SelectedIndexChanged(object sender, EventArgs e)
         {
             LoadJornada();
@@ -5725,8 +5750,8 @@ namespace Tesalia_Redes_App
             openFileDialog1.InitialDirectory = Application.StartupPath;
             openFileDialog1.RestoreDirectory = false;
             openFileDialog1.Title = "Buscar Firma";
-            openFileDialog1.Filter = "PNG|*.png";
-            openFileDialog1.FilterIndex = 2;
+            openFileDialog1.Filter = "Archivos de Imagen|*.png;*.jpeg;*.jpg";
+            openFileDialog1.FilterIndex = 1;
             openFileDialog1.ShowDialog();
             try
             {
